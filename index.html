@@ -394,7 +394,7 @@
     <h2>Ready To Order?</h2>
     <p style="color:var(--muted); font-weight:300; margin-bottom: 1.5rem;">Reach out directly on WhatsApp — we'll get back to you within a few hours and talk through your project.</p>
     <div class="contact-options" style="margin-bottom: 2.5rem;">
-      <a href="https://wa.me/14379330509?text=Hi!%20I'm%20interested%20in%20a%20custom%203D%20print" class="contact-btn" target="_blank">
+      <a href="https://wa.me/15191234567?text=Hi!%20I'm%20interested%20in%20a%20custom%203D%20print" class="contact-btn" target="_blank">
         <div class="contact-icon whatsapp-icon">💬</div>
         <div class="contact-btn-text">
           <h4>Message on WhatsApp</h4>
@@ -408,17 +408,17 @@
       <div class="form-row">
         <div class="form-group">
           <label>Your Name</label>
-          <input type="text" placeholder="John Smith" required>
+          <input type="text" name="name" placeholder="John Smith" required>
         </div>
         <div class="form-group">
           <label>Contact (Phone / WhatsApp)</label>
-          <input type="text" placeholder="your phone number" required>
+          <input type="text" name="phone" placeholder="your phone number" required>
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
           <label>Category</label>
-          <select required>
+          <select name="category" required>
             <option value="">Select...</option>
             <option>Action Figure / Character</option>
             <option>Scale Vehicle</option>
@@ -431,7 +431,7 @@
         </div>
         <div class="form-group">
           <label>Finish Preference</label>
-          <select required>
+          <select name="finish" required>
             <option value="">Select...</option>
             <option>Painted & finished by us</option>
             <option>Raw print — I'll paint it</option>
@@ -441,7 +441,7 @@
       </div>
       <div class="form-group">
         <label>Describe Your Model</label>
-        <textarea rows="4" placeholder="Tell us what you're looking for — character name, size, colours, reference images, special details..." required></textarea>
+        <textarea rows="4" name="description" placeholder="Tell us what you're looking for — character name, size, colours, reference images, special details..." required></textarea>
       </div>
       <button type="submit" class="submit-btn">Send Request →</button>
       <p class="form-note">We'll respond via WhatsApp within a few hours</p>
