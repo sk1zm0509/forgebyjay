@@ -114,7 +114,7 @@
 
   /* CONTACT */
   .contact-section { background: var(--surface); padding: 6rem 4rem; }
-  .contact-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .contact-inner { max-width: 700px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 0; align-items: start; }
   .contact-options { display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
   .contact-btn { display: flex; align-items: center; gap: 1rem; background: var(--surface2); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.2rem 1.5rem; text-decoration: none; color: var(--text); transition: border-color 0.2s, transform 0.2s; }
   .contact-btn:hover { border-color: var(--accent); transform: translateX(4px); }
@@ -390,66 +390,62 @@
 <!-- CONTACT / ORDER -->
 <div class="contact-section" id="contact">
   <div class="contact-inner">
-    <div>
-      <div class="section-tag">Get In Touch</div>
-      <h2>Ready To Order?</h2>
-      <p style="color:var(--muted); font-weight:300; margin-bottom: 0.5rem;">Reach out directly — we'll get back to you within a few hours and talk through your project.</p>
-      <div class="contact-options">
-        <a href="https://wa.me/14379330509?text=Hi!%20I'm%20interested%20in%20a%20custom%203D%20print" class="contact-btn" target="_blank">
-          <div class="contact-icon whatsapp-icon">💬</div>
-          <div class="contact-btn-text">
-            <h4>Message on WhatsApp</h4>
-            <p>Quickest way to get a quote — usually reply in hours</p>
-          </div>
-          <span class="contact-arrow">›</span>
-        </a>
-    </div>
-
-    <div>
-      <p style="font-size:0.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:1.5rem;">Or fill in a request form</p>
-      <form class="order-form" onsubmit="handleSubmit(event)">
-        <div class="form-row">
-          <div class="form-group">
-            <label>Your Name</label>
-            <input type="text" placeholder="John Smith" required>
-          </div>
-          <div class="form-group">
-            <label>Contact (Phone / Email)</label>
-            <input type="text" placeholder="email or phone" required>
-          </div>
+    <div class="section-tag">Get In Touch</div>
+    <h2>Ready To Order?</h2>
+    <p style="color:var(--muted); font-weight:300; margin-bottom: 1.5rem;">Reach out directly on WhatsApp — we'll get back to you within a few hours and talk through your project.</p>
+    <div class="contact-options" style="margin-bottom: 2.5rem;">
+      <a href="https://wa.me/15191234567?text=Hi!%20I'm%20interested%20in%20a%20custom%203D%20print" class="contact-btn" target="_blank">
+        <div class="contact-icon whatsapp-icon">💬</div>
+        <div class="contact-btn-text">
+          <h4>Message on WhatsApp</h4>
+          <p>Quickest way to get a quote — usually reply in hours</p>
         </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label>Category</label>
-            <select required>
-              <option value="">Select...</option>
-              <option>Action Figure / Character</option>
-              <option>Scale Vehicle</option>
-              <option>Engine / Mechanical</option>
-              <option>Architecture / Building</option>
-              <option>Gaming Prop</option>
-              <option>Custom / Gift</option>
-              <option>Other (describe below)</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Finish Preference</label>
-            <select required>
-              <option value="">Select...</option>
-              <option>Painted & finished by you</option>
-              <option>Raw print — I'll paint it</option>
-              <option>Not sure yet</option>
-            </select>
-          </div>
+        <span class="contact-arrow">›</span>
+      </a>
+    </div>
+    <p style="font-size:0.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:1.5rem;">Or fill in a request form</p>
+    <form class="order-form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="John Smith" required>
         </div>
         <div class="form-group">
-          <label>Describe Your Model</label>
-          <textarea rows="4" placeholder="Tell us what you're looking for — character name, size, colours, reference images, special details..." required></textarea>
+          <label>Contact (Phone / WhatsApp)</label>
+          <input type="text" placeholder="your phone number" required>
         </div>
-        <button type="submit" class="submit-btn">Send Request →</button>
-        <p class="form-note">We'll respond via WhatsApp or email within a few hours</p>
-      </form>
-    </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Category</label>
+          <select required>
+            <option value="">Select...</option>
+            <option>Action Figure / Character</option>
+            <option>Scale Vehicle</option>
+            <option>Engine / Mechanical</option>
+            <option>Architecture / Building</option>
+            <option>Gaming Prop</option>
+            <option>Custom / Gift</option>
+            <option>Other (describe below)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Finish Preference</label>
+          <select required>
+            <option value="">Select...</option>
+            <option>Painted & finished by us</option>
+            <option>Raw print — I'll paint it</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Describe Your Model</label>
+        <textarea rows="4" placeholder="Tell us what you're looking for — character name, size, colours, reference images, special details..." required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Request →</button>
+      <p class="form-note">We'll respond via WhatsApp within a few hours</p>
+    </form>
   </div>
 </div>
 
